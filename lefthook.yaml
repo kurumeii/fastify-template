@@ -1,0 +1,10 @@
+pre-commit:
+  parallel: true
+  commands:
+    spell-check:
+      glob: "*.{js,ts,json}"
+      run: pnpm dlx cspell {staged_files}
+    code-linting:
+      glob: "*.{js,ts,json}"
+      run: pnpm dlx @biomejs/biome check --write --no-errors-on-unmatched {staged_files}
+      stage_fixed: true

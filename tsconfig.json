@@ -1,0 +1,18 @@
+{
+  "extends": "@tsconfig/node-lts/tsconfig.json",
+  "compilerOptions": {
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowSyntheticDefaultImports": true,
+    "verbatimModuleSyntax": true,
+    "typeRoots": ["./node_modules/@types", "./src/types/global.ts"],
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}

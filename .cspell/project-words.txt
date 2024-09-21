@@ -1,0 +1,10 @@
+# Custom Dictionary Words
+biomejs
+endregion
+fastify
+Formbody
+gquittet
+lefthook
+pino
+remeda
+typebox

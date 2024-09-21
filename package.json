@@ -1,0 +1,68 @@
+{
+  "name": "fastify-template",
+  "version": "1.0.0",
+  "description": "My Restful API w fastify",
+  "keywords": [
+    "fastify",
+    "typescript",
+    "biomejs",
+    "cspell",
+    "swc"
+  ],
+  "author": {
+    "email": "ngphuchoanganh@gmail.com",
+    "name": "Nguyen Phuc Hoang Anh",
+    "url": "https://github.com/kurumeii"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@8.6.1",
+  "dependencies": {
+    "@fastify/auth": "^5.0.0",
+    "@fastify/bearer-auth": "^10.0.0",
+    "@fastify/compress": "^8.0.0",
+    "@fastify/cookie": "^10.0.0",
+    "@fastify/cors": "^10.0.0",
+    "@fastify/env": "^5.0.1",
+    "@fastify/formbody": "^8.0.0",
+    "@fastify/helmet": "^12.0.0",
+    "@fastify/jwt": "^9.0.0",
+    "@fastify/multipart": "^9.0.0",
+    "@fastify/one-line-logger": "^2.0.0",
+    "@fastify/sensible": "^6.0.1",
+    "@fastify/type-provider-typebox": "^5.0.0",
+    "@gquittet/graceful-server": "^5.2.6",
+    "@sinclair/typebox": "^0.33.12",
+    "dayjs": "^1.11.13",
+    "fastify": "^5.0.0",
+    "fastify-plugin": "^5.0.1",
+    "remeda": "^2.14.0"
+  },
+  "scripts": {
+    "build": "swc ./src -d dist",
+    "start": "node dist/src/main.js",
+    "dev": "nodemon",
+    "lint": "biome check ./src --write",
+    "prepare": "lefthook install",
+    "type-check": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.2",
+    "@cspell/dict-css": "^4.0.13",
+    "@cspell/dict-html": "^4.0.5",
+    "@cspell/dict-node": "^5.0.1",
+    "@cspell/dict-typescript": "^3.1.6",
+    "@cspell/dict-vi-vn": "^3.0.0",
+    "@swc-node/register": "^1.10.9",
+    "@swc/cli": "0.4.1-nightly.20240914",
+    "@swc/core": "^1.7.26",
+    "@tsconfig/node-lts": "^20.1.3",
+    "@types/node": "^22.5.5",
+    "cspell": "^8.14.4",
+    "lefthook": "^1.7.15",
+    "nodemon": "^3.1.7",
+    "typescript": "^5.6.2"
+  }
+}
